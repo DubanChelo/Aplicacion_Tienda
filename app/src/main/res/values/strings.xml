@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Aplicacion_Tienda</string>
+    <string name="title_activity_al_register">alRegister</string>
 </resources>
