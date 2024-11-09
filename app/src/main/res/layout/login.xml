@@ -20,7 +20,7 @@
     <!-- Añade una imagen que extrae de la carpeta drawable-->
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -37,7 +37,7 @@
     <!-- Añade un inputText de para el campo del Email, colores de las letras blancos-->
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -48,7 +48,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText"
+        app:layout_constraintTop_toBottomOf="@+id/email"
         android:hint="Password"
         android:textColorHint="@color/white"
         android:textColor="@color/white"/>
@@ -65,7 +65,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/password" />
     <!-- Botón para loguearse-->
 
     <Button

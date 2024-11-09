@@ -8,21 +8,26 @@ import androidx.annotation.Nullable;
 
 public class dbHelper extends SQLiteOpenHelper {
 
-    String DB_NOMBRE = "DBApp";
-    String T_PRODUCTOS = "t_productos";
-    int DB_VERSION = 1;
+    private static final int DB_VERSION = 1;
+    private static final String DB_NOMBRE = "DBUsuarios.db";
+    public static final String T_USUARIOS = "t_usuarios";
 
-    public dbHelper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
-        super(context, name, factory, version);
+
+    public dbHelper(@Nullable Context context) {
+        super(context, DB_NOMBRE, null, DB_VERSION);
     }
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-
+        sqLiteDatabase.execSQL("CREATE TABLE " + T_USUARIOS + "(" +
+                "id INTEGER PRIMARY KEY AUTOINCREMENT," +
+                "email TEXT NOT NULL," +
+                "password TEXT NOT NULL)");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-
+        //sqLiteDatabase.execSQL("DROP TABLE " + T_USUARIOS);
+        onCreate(sqLiteDatabase);
     }
 }
