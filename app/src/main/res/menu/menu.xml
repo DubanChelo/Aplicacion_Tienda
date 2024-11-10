@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Item para eliminar -->
+    <item
+        android:id="@+id/item_eliminarTodo"
+        android:title="Eliminar_Todo"
+        android:icon="@drawable/baseline_delete_24"
+        app:showAsAction="always"/>
+
+    <!-- Item para geolocalización -->
+    <item
+        android:id="@+id/item_geolocalización"
+        android:title="Geolocalización"
+        android:icon="@drawable/baseline_location"
+        app:showAsAction="always"/>
+
+    <!-- Item para carrito -->
+    <item
+        android:id="@+id/item_Carrito"
+        android:title="Carrito"
+        android:icon="@drawable/baseline_shopping_cart"
+        app:showAsAction="always"/>
+</menu>
