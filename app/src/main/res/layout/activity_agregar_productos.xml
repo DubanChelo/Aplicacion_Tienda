@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AgregarProductos"
-    android:padding="30dp">
+    android:padding="30dp"
+    android:background="#202732">
 
     <EditText
         android:id="@+id/nombre_input"
@@ -19,6 +20,8 @@
         android:hint="Nombre Producto"
         android:inputType="text"
         android:textStyle="bold"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,6 +38,8 @@
         android:hint="Precio"
         android:inputType="number"
         android:textStyle="bold"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.606"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,6 +56,8 @@
         android:hint="Cantidad"
         android:inputType="number"
         android:textStyle="bold"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.714"
         app:layout_constraintStart_toStartOf="parent"

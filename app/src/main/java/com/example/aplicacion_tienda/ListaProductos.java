@@ -110,11 +110,10 @@ public class ListaProductos extends AppCompatActivity {
             Toast.makeText(this, "Abriendo carrito", Toast.LENGTH_SHORT).show();
             Intent intentCarro = new Intent(this, Carrito.class);
             startActivity(intentCarro);
-        }
-        //else if (id == R.id.item_geolocalizacion) {
-        //            Toast.makeText(this, "Abriendo geolocalización", Toast.LENGTH_SHORT).show();
-        //            Intent intentGeo = new Intent(this, GeolocalizacionActivity.class);
-        //            startActivity(intentGeo);
+        } else if (id == R.id.item_geolocalización) {
+                    Toast.makeText(this, "Abriendo geolocalización", Toast.LENGTH_SHORT).show();
+                    Intent intentGeo = new Intent(this, mapActivity.class);
+                   startActivity(intentGeo);}
         return super.onOptionsItemSelected(item);
     }
 
