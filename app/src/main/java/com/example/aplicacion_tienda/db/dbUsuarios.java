@@ -28,7 +28,7 @@ public class dbUsuarios extends dbHelper{
             values.put("email", email);
             values.put("password", password);
 
-            id = db.insert("t_usuarios", null, values);
+            id = db.insert(T_USUARIOS, null, values);
         } catch (Exception ex){
             ex.toString();
             Log.e("DB_ERROR", "Error al insertar usuario", ex);
