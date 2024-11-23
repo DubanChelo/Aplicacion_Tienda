@@ -68,6 +68,7 @@ dependencies {
     implementation(libs.play.services.auth)
     implementation(libs.play.services.auth)
     implementation(libs.play.services.identity)
+    implementation(libs.play.services.location)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
